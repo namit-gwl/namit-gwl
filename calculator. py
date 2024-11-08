@@ -1,0 +1,42 @@
+This is a calculator made by me 
+hope you like it 
+
+
+def plus(a,b):
+          value1 = a + b
+          print(value1)
+
+def minus(a,b):
+          value2 = a - b
+          print(value2)
+          
+def multi(a,b):
+          value3 = a * b
+          print(value3)
+          
+def divid(a,b):
+          value4 = a / b
+          print(value4)
+          
+
+st1 = "welcome to the irfan's calclulator"
+print(st1.center(100))
+print("enter any two numbers of which you want to know the answer")
+a = int(input("enter the first number :"))
+b = int(input("enter the second number :"))
+d = int(input('''enter the numbers to choose the symbole :
+              "1" is for addition
+              "2" is for subtraction
+              "3" is for multiplication
+              "4" is for divide
+              please select one number :'''))
+match d:
+          case 1:
+                    plus(a,b)
+          case 2:
+                    minus(a,b)
+          case 3:
+                    multi(a,b)
+          case 4:
+                    divid(a,b)
+
